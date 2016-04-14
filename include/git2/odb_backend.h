@@ -129,6 +129,7 @@ struct git_odb_writepack {
 	void (*free)(git_odb_writepack *writepack);
 };
 
+/** @} */
 GIT_END_DECL
 
 #endif

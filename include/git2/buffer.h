@@ -121,8 +121,7 @@ GIT_EXTERN(int) git_buf_is_binary(const git_buf *buf);
 */
 GIT_EXTERN(int) git_buf_contains_nul(const git_buf *buf);
 
-GIT_END_DECL
-
 /** @} */
+GIT_END_DECL
 
 #endif

@@ -229,7 +229,7 @@ GIT_EXTERN(size_t) git_remote_refspec_count(const git_remote *remote);
  * @param n the refspec to get
  * @return the nth refspec
  */
-GIT_EXTERN(const git_refspec *)git_remote_get_refspec(const git_remote *remote, size_t n);
+GIT_EXTERN(const git_refspec *) git_remote_get_refspec(const git_remote *remote, size_t n);
 
 /**
  * Open a connection to a remote
@@ -328,7 +328,7 @@ GIT_EXTERN(int) git_remote_list(git_strarray *out, git_repository *repo);
 typedef enum git_remote_completion_type {
 	GIT_REMOTE_COMPLETION_DOWNLOAD,
 	GIT_REMOTE_COMPLETION_INDEXING,
-	GIT_REMOTE_COMPLETION_ERROR,
+	GIT_REMOTE_COMPLETION_ERROR
 } git_remote_completion_type;
 
 /** Push network progress notification function */
@@ -403,7 +403,7 @@ struct git_remote_callbacks {
 	 * connection to proceed. Returns 1 to allow the connection, 0
 	 * to disallow it or a negative value to indicate an error.
 	 */
-        git_transport_certificate_check_cb certificate_check;
+   git_transport_certificate_check_cb certificate_check;
 
 	/**
 	 * During the download of new data, this will be regularly
@@ -486,7 +486,7 @@ typedef enum {
 	/**
 	 * Force pruning off
 	 */
-	GIT_FETCH_NO_PRUNE,
+	GIT_FETCH_NO_PRUNE
 } git_fetch_prune_t;
 
 /**
@@ -511,7 +511,7 @@ typedef enum {
 	/**
 	 * Ask for the all the tags.
 	 */
-	GIT_REMOTE_DOWNLOAD_TAGS_ALL,
+	GIT_REMOTE_DOWNLOAD_TAGS_ALL
 } git_remote_autotag_option_t;
 
 /**

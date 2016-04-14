@@ -209,9 +209,7 @@ GIT_EXTERN(int) git_filter_list_stream_blob(
  */
 GIT_EXTERN(void) git_filter_list_free(git_filter_list *filters);
 
-
-GIT_END_DECL
-
 /** @} */
+GIT_END_DECL
 
 #endif

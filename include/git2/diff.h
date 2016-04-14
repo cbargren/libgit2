@@ -163,7 +163,7 @@ typedef enum {
 
 	/** Include unreadable files in the diff */
 	GIT_DIFF_INCLUDE_UNREADABLE = (1u << 16),
-	
+
 	/** Include unreadable files in the diff */
 	GIT_DIFF_INCLUDE_UNREADABLE_AS_UNTRACKED = (1u << 17),
 
@@ -1345,8 +1345,7 @@ GIT_EXTERN(int) git_diff_format_email_init_options(
 	git_diff_format_email_options *opts,
 	unsigned int version);
 
-GIT_END_DECL
-
 /** @} */
+GIT_END_DECL
 
 #endif
