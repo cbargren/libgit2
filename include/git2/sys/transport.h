@@ -191,7 +191,7 @@ GIT_EXTERN(int) git_transport_unregister(
 GIT_EXTERN(int) git_transport_dummy(
 	git_transport **out,
 	git_remote *owner,
-	/* NULL */ void *payload);
+	void *payload /* NULL */);
 
 /**
  * Create an instance of the local transport.
@@ -204,7 +204,7 @@ GIT_EXTERN(int) git_transport_dummy(
 GIT_EXTERN(int) git_transport_local(
 	git_transport **out,
 	git_remote *owner,
-	/* NULL */ void *payload);
+	void *payload /* NULL */);
 
 /**
  * Create an instance of the smart transport.
@@ -217,7 +217,7 @@ GIT_EXTERN(int) git_transport_local(
 GIT_EXTERN(int) git_transport_smart(
 	git_transport **out,
 	git_remote *owner,
-	/* (git_smart_subtransport_definition *) */ void *payload);
+	void *payload /* (git_smart_subtransport_definition *) */ );
 
 /**
  * Call the certificate check for this transport.
